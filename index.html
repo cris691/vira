@@ -23,7 +23,7 @@
   <a href=/vira/>Go home</a>
 </small>
 <script>
-  document.onhashchange () => {
-    vira.innerHTML = `Vira wave ${document.location.hash} not found.<br>Yes...`;
-  }
+  document.onhashchange = () => {
+    vira.innerHTML = `Vira wave ${document.location.hash} not found.<br><i>Yet...</i>`;
+  };
 </script>
