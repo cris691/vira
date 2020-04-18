@@ -1,0 +1,29 @@
+<article id=vira>
+  <h1>YOU ARE NOW ENTERING</h1>
+  <hr>
+  <h1>VIRUS WAVE #2</h1>
+  <hr>
+  <p>There shall be more waves incoming....</p>
+</article>
+<ul>
+  <strong>Wave</strong>
+  <li><a href=#3>#3</a>
+  <li><a href=#4>#4</a>
+  <li><a href=#5>#5</a>
+  <li><a href=#6>#6</a>
+  <li><a href=#7>#7</a>
+  <li><a href=#8>#8</a>
+  <li><a href=#9>#9</a>
+  <li><a href=#10>#10</a>
+  <li><a href=#...>#...</a>
+</ul>
+<cite>Welcome to the Virus Zone</cite>
+<br>
+<small>
+  <a href=/vira/>Go home</a>
+</small>
+<script>
+  document.onhashchange () => {
+    vira.innerHTML = `Vira wave ${document.location.hash} not found.<br>Yes...`;
+  }
+</script>
