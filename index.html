@@ -24,6 +24,11 @@
 </small>
 <script>
   self.onhashchange = () => {
-    vira.innerHTML = `Vira wave ${document.location.hash} not found.<br><i>Yet...</i>`;
+    if ( document.location.hash ) {
+      vira.innerHTML = `Vira wave ${document.location.hash} not found.<br><i>Yet...</i>`;
+    } else {
+      location.hash = '';
+      location.reload();
+    }
   };
 </script>
