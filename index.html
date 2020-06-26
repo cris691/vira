@@ -1,13 +1,13 @@
 <article id=vira>
   <h1>YOU ARE NOW ENTERING</h1>
   <hr>
-  <h1>VIRUS WAVE #2</h1>
+  <h1>VIRUS WAVE #3</h1>
   <hr>
   <p>There shall be more waves incoming....</p>
 </article>
 <ul>
   <strong>Wave</strong>
-  <li><a href=#3>#3</a>
+  <li><a href=#2>#2</a>
   <li><a href=#4>#4</a>
   <li><a href=#5>#5</a>
   <li><a href=#6>#6</a>
@@ -25,7 +25,11 @@
 <script>
   self.onhashchange = () => {
     if ( document.location.hash ) {
-      vira.innerHTML = `Vira wave ${document.location.hash} not found.<br><i>Yet...</i>`;
+      if ( parseInt(document.location.hash.slice(1)) < 3 ) {
+        vira.innerHTML = `Vira wave ${document.location.hash} already passed...`;
+      } else {
+        vira.innerHTML = `Vira wave ${document.location.hash} not found.<br><i>Yet...</i>`;
+      }
     } else {
       location.hash = '';
       location.reload();
